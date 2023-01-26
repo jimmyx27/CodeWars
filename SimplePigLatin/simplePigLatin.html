@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function pigIt(str) {
+        let lower = str.toLowerCase();
+        let arr = Array.from(lower);
+        let first = arr.splice(0, 1);
+        let indexOfLast = arr.length - 1;
+        let reverse;
+        let punc;
+        if (arr[indexOfLast] === "!") {
+          punc = arr.splice(indexOfLast, 1);
+          reverse = arr.reverse();
+          console.log(reverse);
+        } else {
+          reverse = arr.reverse();
+        }
+
+        console.log(reverse.reverse().join("") + first + "ay" + punc);
+      }
+
+      pigIt("Hello!");
+    </script>
+  </body>
+</html>
