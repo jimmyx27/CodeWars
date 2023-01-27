@@ -5,6 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Get the middle character</h1>
+      <p>
+        Get the middle character of a word. If the word is even return 2 middle
+        characters
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>test cases</h2>
+        <ul>
+          <li>test</li>
+          <li>testing</li>
+          <li>middle</li>
+          <li>A</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Pseudocode</h2>
+        <ol>
+          <li>find index of middle: (s.length / 2) - 1</li>
+          <li>
+            if even use midde and one more: (s.length / 2) -1 and s.length / 2
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>test cases</h2>
+        <ol>
+          <li>"test"</li>
+          <li>"testing"</li>
+          <li>"middle"</li>
+          <li>"a"</li>
+        </ol>
+      </section>
+    </main>
+
+    <button id="test1" data-test="test">TEST1</button>
+    <button id="test2" data-test="testing">TEST2</button>
+    <button id="test3" data-test="middle">TEST3</button>
+    <button id="test4" data-test="a">TEST4</button>
+
+    <script src="./scripts.js"></script>
+  </body>
 </html>

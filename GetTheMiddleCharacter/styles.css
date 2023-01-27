@@ -1,0 +1,22 @@
+* {
+  background-color: moccasin;
+}
+main {
+  display: flex;
+}
+
+section {
+  flex-basis: 32%;
+  width: 31%;
+  height: 200px;
+  justify-content: space-around;
+}
+
+button {
+  width: 10%;
+  float: left;
+}
+
+header {
+  width: 100%;
+}
