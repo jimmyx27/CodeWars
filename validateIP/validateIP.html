@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function isValidIP(str) {
+            // let arr = str.split('.');
+            // console.log(arr);
+            // for (const num of arr) {
+            //     console.log(num);
+            //     if (!num[0] === 0 
+            //     || !num[3] 
+            //     || arr[3][1] === 0 
+            //     || !arr[4] 
+            //     ) {
+            //         console.log(num, "true")
+            //         continue
+            //     } else {
+            //         console.log(num, "false")
+            //         return false;
+            //     }
+            // }
+            return /^(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))$/.test(str);
+        }
+
+        // isValidIP("1.2.3.4");
+        // isValidIP("123.45.67.89");
+        // isValidIP("1.2.3");
+        // isValidIP("1.2.3.4.5");
+        // isValidIP("123.456.78.90");
+        // isValidIP("123.045.067.089");
+    </script>
+</body>
+</html>
