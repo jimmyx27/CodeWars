@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function solution(string) {
+        let splitStr = string.split("");
+        let newStr = string.split("");
+        let capStr = string.toUpperCase().split("");
+        for (let i = string.length - 1; i >= 0; i++) {
+          if (splitStr[i] === capStr[i]) {
+            newStr.splice(i, 0, " ");
+          }
+        }
+        return newStr.join("");
+      }
+    </script>
+  </body>
+</html>
