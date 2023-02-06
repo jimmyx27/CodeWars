@@ -6,5 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      function goodVsEvil(good, evil) {
+        let goodArr = good.split(" ");
+        let evilArr = evil.split(" ");
+        let goodWorth = [1, 2, 3, 3, 4, 10];
+        let evilWorth = [1, 2, 2, 2, 3, 5, 10];
+        let goodPts = 0;
+        let evilPts = 0;
+        for (let i = 0; i < goodArr.length; i++) {
+          goodPts += goodArr[i] * goodWorth[i];
+          console.log(i);
+        }
+        for (let j = 0; j < evilArr.length; j++) {
+          evilPts += evilArr[j] * evilWorth[j];
+        }
+        console.log(goodPts, evilPts);
+        if (goodPts > evilPts) {
+          return "Battle Result: Good triumphs over Evil";
+          console.log("Battle Result: Good triumphs over Evil");
+        } else if (goodPts < evilPts) {
+          console.log("Battle Result: Evil eradicates all trace of Good");
+        } else if (goodPts === evilPts) {
+          return "Battle Result: No victor on this battle field";
+        }
+      }
+
+      goodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0");
+    </script>
+  </body>
 </html>
