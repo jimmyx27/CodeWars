@@ -1,0 +1,7 @@
+function isPrime(num) {
+    if (num % num - 1 !== 0) {
+        isPrime(num - 1);
+    } else {
+        return false;
+    }
+}
