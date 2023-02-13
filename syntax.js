@@ -25,3 +25,16 @@ function convertToCelsius(temperature) {
   var celsius = (temperature - 32) * (5 / 9);
   return celsius;
 }
+
+var health = 100;
+var position = 0;
+var coins = 0;
+
+function main() {
+  rollDice();
+  move();
+  combat();
+  getCoins();
+  buyHealth();
+  printStatus();
+}
