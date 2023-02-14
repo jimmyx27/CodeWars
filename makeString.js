@@ -7,3 +7,9 @@ function makeString(s) {
 }
 
 makeString("Hello this is a test");
+
+const makeString = (s) =>
+  s
+    .split(" ")
+    .map((x) => x[0])
+    .join("");
