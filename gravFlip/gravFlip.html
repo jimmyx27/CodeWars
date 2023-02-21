@@ -9,11 +9,12 @@
 <body>
     <script>
         const flip=(d,a)=>{
-            if (d === 'L') {
-                return a.sort((a,b) => a - b).reverse();
-            } else {
-                return a.sort((a, b) => a - b);
-            }
+//             if (d === 'L') {
+//                 return a.sort((a,b) => a - b).reverse();
+//             } else {
+//                 return a.sort((a, b) => a - b);
+//             }
+            return d === 'L' ? a.sort((a,b) => a - b).reverse() : a.sort((a,b) => a - b);
         }
     </script>
 </body>

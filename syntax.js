@@ -17,8 +17,7 @@ function addFive(num) {
 
 function weatherInfo(temp) {
   var c = convertToCelsius(temp);
-  if (c < 0) return c + " is freezing temperature";
-  else return c + " is above freezing temperature";
+  return c < 0 ? c + " is freezing temperature" : c + " is above freezing temperature";
 }
 
 function convertToCelsius(temperature) {
