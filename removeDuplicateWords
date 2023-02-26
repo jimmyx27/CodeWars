@@ -1,0 +1,13 @@
+function removeDuplicateWords (s) {
+  // your perfect code...
+  let singleS = [];
+  let sArr = s.split(' ');
+ for (const string of sArr) {
+   if (!singleS.includes(string)) {
+     singleS.push(string);
+     } else {
+       continue;
+     }
+ } 
+  return singleS.join(" ")
+}
