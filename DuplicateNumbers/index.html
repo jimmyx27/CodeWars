@@ -11,6 +11,7 @@
       var containsDuplicate = function (nums) {
         let numbers = [];
         for (const num of nums) {
+          //return numbers.indexof(num) === -1 ? numbers.push(num) : true
           if (numbers.indexOf(num) === -1) {
             numbers.push(num);
           } else {
