@@ -1,0 +1,8 @@
+function replicate(times, number) {
+	// your solution here
+  if (times <= 0) {
+    return [];
+    }
+  return replicate(times - 1, number).concat([number]);
+
+}
