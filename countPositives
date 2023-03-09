@@ -13,6 +13,6 @@ function countPositivesSumNegatives(input) {
         positive++;
     }
   })
-  let sum = negative.reduce((a,b) => a + b)
-  return [positive, sum];
+  let sum = negative.reduce((a,b) => a + b, 0)
+  return positive === 0 || sum === 0 ? [] : [positive, sum];
 }
