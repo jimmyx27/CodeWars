@@ -1,1 +1,6 @@
 
+var Ball = function(ballType) {
+  // your code goes here
+  ballType === undefined ? ballType = "regular" : ""
+  this.ballType = ballType;
+};
