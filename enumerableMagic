@@ -1,1 +1,13 @@
 
+function all( arr, fun ){
+  // ...
+  console.log(arr.every(fun))
+  if (arr === []) {
+    return false;
+  }
+  if (arr.every(fun) === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
